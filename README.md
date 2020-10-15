@@ -1,6 +1,6 @@
 # Description
 Will be used for storing configs or usable scripts to support Nomad and Consul High Availability
-# Pre-requisitites
+# Pre-requisites
 ## AWS
 * Set IAM Role with Policy to describe instances
 ```

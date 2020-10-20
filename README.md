@@ -21,3 +21,4 @@ Will be used for storing configs or usable scripts to support Nomad and Consul H
 * AWS with Amazon 2 as Image
 # Post Request
 * Setup NFS -> https://medium.com/@admantium/persisting-data-with-nomad-f98754753c0e
+* For LB -> https://learn.hashicorp.com/tutorials/nomad/load-balancing-traefik?in=nomad/load-balancing

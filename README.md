@@ -19,3 +19,5 @@ Will be used for storing configs or usable scripts to support Nomad and Consul H
 * All VMs must have tag (in this script `tipeserver:nomad`). And also must be bound with IAM role above
 # Tested
 * AWS with Amazon 2 as Image
+# Post Request
+* Setup NFS -> https://medium.com/@admantium/persisting-data-with-nomad-f98754753c0e

@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Setting up DNS"
+sudo bash -c 'echo "DNS1=127.0.0.1" >> /etc/sysconfig/network-scripts/ifcfg-eth0'
+sudo bash -c 'echo "DNS2=172.25.0.2" >> /etc/sysconfig/network-scripts/ifcfg-eth0'
+sudo service network restart
 echo "Installing Vault..."
 VAULT_VERSION=1.5.5
 curl -sSL https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip> vault.zip

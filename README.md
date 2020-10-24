@@ -17,6 +17,8 @@ Will be used for storing configs or usable scripts to support Nomad and Consul H
 }
 ```
 * All VMs must have tag (in this script `tipeserver:nomad`). And also must be bound with IAM role above
+# Notes
+Change the DNS2 to your DNS gateway. Let's say your VPC is 172.25.0.0/16, then the DNS will be 172.25.0.2.
 # Tested
 * AWS with Amazon 2 as Image
 # Post Request

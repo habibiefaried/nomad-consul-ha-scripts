@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Setting up DNS"
+sudo bash -c 'echo "DNS1=127.0.0.1" >> /etc/sysconfig/network-scripts/ifcfg-eth0'
+sudo bash -c 'echo "DNS2=172.25.0.2" >> /etc/sysconfig/network-scripts/ifcfg-eth0'
+sudo service network restart
 yes | sudo amazon-linux-extras install docker
 sudo amazon-linux-extras enable docker
 sudo service docker start

@@ -64,6 +64,12 @@ KillSignal=SIGTERM
 WantedBy=multi-user.target
 EOF'
 sudo yum install amazon-ecr-credential-helper
+mkdir -p .docker
+cat > .docker/config.json <<EOF
+{
+	"credsStore": "ecr-login"
+}
+EOF
 sudo systemctl enable nomad
 sudo systemctl start nomad
 echo "Installing Dnsmasq..."

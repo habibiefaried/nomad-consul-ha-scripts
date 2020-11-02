@@ -63,7 +63,7 @@ KillSignal=SIGTERM
 [Install]
 WantedBy=multi-user.target
 EOF'
-sudo yum install amazon-ecr-credential-helper
+sudo yum -y install amazon-ecr-credential-helper
 mkdir -p .docker
 cat > .docker/config.json <<EOF
 {

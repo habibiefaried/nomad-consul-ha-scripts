@@ -63,6 +63,7 @@ KillSignal=SIGTERM
 [Install]
 WantedBy=multi-user.target
 EOF'
+sudo yum install amazon-ecr-credential-helper
 sudo systemctl enable nomad
 sudo systemctl start nomad
 echo "Installing Dnsmasq..."

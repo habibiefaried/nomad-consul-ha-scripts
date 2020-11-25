@@ -75,7 +75,7 @@ echo "Installing Dnsmasq..."
 sudo yum -y install dnsmasq dnsmasq-utils
 echo "Configuring Dnsmasq..."
 sudo bash -c 'echo "server=/consul/127.0.0.1#8600" >> /etc/dnsmasq.d/consul'
-sudo bash -c 'echo "listen-address=127.0.0.1" >> /etc/dnsmasq.d/consul'
+sudo bash -c 'echo "listen-address=0.0.0.0" >> /etc/dnsmasq.d/consul'
 sudo bash -c 'echo "bind-interfaces" >> /etc/dnsmasq.d/consul'
 echo "Restarting dnsmasq..."
 sudo systemctl enable dnsmasq
